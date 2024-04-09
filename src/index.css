@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-neutral-950 text-white;
+  }
+
+  * {
+    @apply p-0 m-0;
+    -webkit-touch-callout: none; /* iPhone OS, Safari */
+    -webkit-user-select: none; /* Chrome, Safari 3 */
+    -khtml-user-select: none; /* Safari 2 */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+ */
+    user-select: none; /* Possível implementação no futuro */
+    /* cursor: default; */
+  }
+
+  .card{
+    @apply rounded-3xl flex flex-col bg-neutral-600 py-3 px-6 cursor-pointer
+  }
+
+  .span-2{
+    @apply col-span-2
+  }
+}
