@@ -17,13 +17,13 @@ const MainCard = ({
 }: MainCardProps) => {
   return (
     <div className={`card ${bgColor}`}>
-      <div className="flex gap-2 justify-start items-center">
-        <div className="flex flex-col h-full py-2">
+      <div className="card-header">
+        <div className="card-icon">
           <img src={icon} alt={title} width={48} />
         </div>
-        <div className="flex flex-col">
-          <h2 className="font-bold text-3xl">{title}</h2>
-          <p>{subtitle}</p>
+        <div className="card-text">
+          <h2 className="card-title">{title}</h2>
+          <p className="card-paragraph">{subtitle}</p>
         </div>
       </div>
 
