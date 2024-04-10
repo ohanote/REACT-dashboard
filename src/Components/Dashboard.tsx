@@ -2,6 +2,13 @@ import BarsCharts from "./BarsCharts";
 import CustomPieCharts from "./CustomPieCharts";
 import LinesCharts from "./LinesCharts";
 import MainCard from "./MainCard";
+import IconSearch from "../../src/assets/icon-search.svg"
+import IconDarkMode from "../../src/assets/icon-dark-mode.svg"
+import IconNotification from "../../src/assets/icon-notification.svg"
+import IconSales from "../../src/assets/icon-sales.svg"
+import IconProfit from "../../src/assets/icon-profit.svg"
+import IconAI from "../../src/assets/icon-ai.svg"
+import IconActivity from "../../src/assets/icon-activity.svg"
 
 const Dashboard = () => {
   return (
@@ -15,7 +22,7 @@ const Dashboard = () => {
             className="py-2 px-4 rounded-full bg-zinc-950 border-2 border-zinc-700 hover:bg-zinc-700 focus-within:outline-none w-96"
           />
           <img
-            src="../../src/assets/icon-search.svg"
+            src={IconSearch}
             alt="search"
             width={24}
             className="ml-[-36px] mr-4 cursor-pointer"
@@ -24,15 +31,15 @@ const Dashboard = () => {
         <div className="flex gap-2">
           <div className="border-2 rounded-md border-zinc-700 bg-zinc-950 p-2 w-12 h-12 flex items-center justify-center hover:bg-zinc-700 cursor-pointer transition-all">
             <img
-              src="../../src/assets/icon-dark-mode.svg"
+              src={IconDarkMode}
               alt="dark-mode"
               width={24}
             />
           </div>
           <div className="border-2 rounded-md border-zinc-700 bg-zinc-950 p-2 w-12 h-12 flex items-center justify-center hover:bg-zinc-700 cursor-pointer transition-all">
             <img
-              src="../../src/assets/icon-notification.svg"
-              alt="dark-mode"
+              src={IconNotification}
+              alt="notification"
               width={24}
             />
           </div>
@@ -53,27 +60,27 @@ const Dashboard = () => {
           mainText="$12 895.5"
           description="+14% Since last week"
           bgColor="bg-teal-800"
-          icon="../../src/assets/icon-profit.svg"
+          icon={IconProfit}
         />
         <BarsCharts
           title="Sales Report"
           subtitle="Earnings"
           bgColor="bg-zinc-600"
-          icon="../../src/assets/icon-sales.svg"
+          icon={IconSales}
           textColor="#5eead4"
         />
         <LinesCharts
           title="Analytical AI"
           subtitle="April 2024"
           bgColor="bg-zinc-600"
-          icon="../../src/assets/icon-ai.svg"
+          icon={IconAI}
           textColor="#5eead4"
         />
         <div className="card span-2">teste</div>
         <CustomPieCharts
           title="Activity"
           bgColor="bg-zinc-600"
-          icon="../../src/assets/icon-activity.svg"
+          icon={IconActivity}
           textColor="#fff"
         />
       </main>

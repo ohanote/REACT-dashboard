@@ -1,4 +1,5 @@
 import MenuItems from "./MenuItems.tsx"
+import IconLogout from "../../src/assets/icon-out.svg"
 
 const Aside = () => {
   return (
@@ -12,7 +13,7 @@ const Aside = () => {
       </nav>
 
       <div className="flex gap-2 cursor-pointer">
-        <img src="../src/assets/icon-out.svg" alt="logout" width={24} />
+        <img src={IconLogout} alt="logout" width={24} />
         LogOut
       </div>
     </aside>
