@@ -53,9 +53,9 @@ const CustomPieCharts = ({
             paddingAngle={5}
             dataKey="sales"
           >
-            {BARS_DATA.map((entry, index) => (
+            {BARS_DATA.map((e, index) => (
               <Cell
-                key={`cell-${index}`}
+                key={`cell-${e.name}`}
                 fill={COLORS[index % COLORS.length]}
                 stroke="none"
                 className="focus:outline-none"
