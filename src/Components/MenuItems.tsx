@@ -9,8 +9,8 @@ const MenuItems = () => {
       {MENU_ITEMS.map((e) => {
         return (
           <div
-            className={`flex items-center text-neutral-400 justify-left gap-2 rounded-lg w-full p-2 transition-all cursor-pointer ${
-              selected === e.key ? "bg-neutral-600 text-white font-bold hover:bg-neutral-500" : "hover:bg-neutral-700"
+            className={`flex items-center text-zinc-400 justify-left gap-2 rounded-lg w-full p-2 transition-all cursor-pointer ${
+              selected === e.key ? "bg-zinc-600 text-white font-bold hover:bg-zinc-500" : "hover:bg-zinc-700"
             }`}
             key={e.key}
             id={e.key}
@@ -19,7 +19,7 @@ const MenuItems = () => {
               return setSelected(key);
             }}
           >
-            <img src={e.icon} alt={e.key} width={24} className="fill-svg-neutral-400"/>
+            <img src={e.icon} alt={e.key} width={24} className="fill-svg-zinc-400"/>
             {e.name}
           </div>
         );
