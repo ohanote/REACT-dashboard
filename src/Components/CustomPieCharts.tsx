@@ -41,7 +41,7 @@ const CustomPieCharts = ({
       <ResponsiveContainer
         width="100%"
         height="100%"
-        className="text-teal-300 transition-all cursor-pointer"
+        className="text-teal-300 transition-all cursor-pointer min-h-44"
       >
         <PieChart width={300} height={300}>
           <Pie
