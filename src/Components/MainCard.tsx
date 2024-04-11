@@ -1,6 +1,8 @@
+import React from "react";
+
 type MainCardProps = {
   title: string;
-  icon: string;
+  icon: React.ReactNode;
   subtitle?: string;
   mainText: string;
   description: string;
@@ -19,7 +21,7 @@ const MainCard = ({
     <div className={`card ${bgColor}`}>
       <div className="card-header">
         <div className="card-icon">
-          <img src={icon} alt={title} width={48} />
+          {icon}
         </div>
         <div className="card-text">
           <h2 className="card-title">{title}</h2>
