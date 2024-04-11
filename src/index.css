@@ -19,7 +19,7 @@
   }
 
   .card{
-    @apply rounded-3xl flex flex-col bg-zinc-300 dark:bg-zinc-800 py-3 px-6 cursor-pointer max-h-72
+    @apply rounded-3xl flex flex-col bg-zinc-300 dark:bg-zinc-800 py-3 px-6 cursor-pointer max-h-72 md:min-h-[14rem] sm:min-h-72
   } .card-header {
     @apply flex gap-2 justify-start items-center mb-2
   } .card-icon{

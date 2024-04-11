@@ -12,7 +12,7 @@ type InvoicesProps = {
 const Invoices = ({ title, icon, subtitle, bgColor }: InvoicesProps) => {
   return (
     <div className="card span-2">
-      <div className={`card ${bgColor}`}>
+      <div className={`${bgColor}`}>
         <div className="card-header">
           <div className="card-icon">
             {icon}
@@ -36,13 +36,7 @@ const Invoices = ({ title, icon, subtitle, bgColor }: InvoicesProps) => {
           return (
             <div className="grid grid-cols-7 gap-2 text-sm items-center w-full">
               <div className="flex justify-start gap-2 items-center span-2">
-                <div className="w-6 h-6 rounded-full overflow-hidden">
-                  <img
-                    src={e.imageURL}
-                    alt={e.name}
-                    min-width="100%"
-                    min-height="100%"
-                  />
+                <div className="w-6 h-6 rounded-full overflow-hidden bg-cover bg-center" style={{backgroundImage: `url(${e.imageURL})`}}>
                 </div>
                 <span className="font-bold">{e.name}</span>
               </div>
