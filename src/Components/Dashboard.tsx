@@ -30,8 +30,8 @@ const Dashboard = () => {
   };
 
   return (
-    <section className="flex flex-col py-8 px-6 lg:p-16 border-l-zinc-300 dark:border-l-zinc-700 border-l-2 h-[100vh]">
-      <header className="items-center justify-between flex pb-8 w-full">
+    <section className="pb-8 lg:pb-0 flex flex-col lg:py-5 px-6 lg:px-6 border-l-zinc-300 dark:border-l-zinc-700 border-l-2 h-full lg:h-[100vh]">
+      <header className="sticky top-0 py-8 z-50 flex items-center justify-between pb-8 w-full bg-white dark:bg-zinc-950">
         <h1 className="font-bold text-2xl lg:block hidden">Overview</h1>
         <div className="flex items-center">
           <input
@@ -81,7 +81,7 @@ const Dashboard = () => {
         </div>
       </header>
 
-      <main className="flex flex-col lg:grid lg:grid-cols-3 lg:grid-rows-2 w-full h-full gap-6">
+      <main className="flex flex-col lg:grid lg:grid-cols-3 lg:grid-rows-2 w-full h-[80%] gap-6 lg:gap-3 mb-8 lg:mb-0">
         <h1 className="font-bold text-2xl block lg:hidden">Overview</h1>
         <MainCard
           title="Profit"
