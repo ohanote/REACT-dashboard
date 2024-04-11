@@ -30,14 +30,14 @@ const Dashboard = () => {
   };
 
   return (
-    <section className="flex flex-col p-16 border-l-zinc-300 dark:border-l-zinc-700 border-l-2 h-[100vh]">
-      <header className="items-center justify-between flex pb-8">
-        <h1 className="font-bold text-2xl ">Overview</h1>
+    <section className="flex flex-col py-8 px-6 lg:p-16 border-l-zinc-300 dark:border-l-zinc-700 border-l-2 h-[100vh]">
+      <header className="items-center justify-between flex pb-8 w-full">
+        <h1 className="font-bold text-2xl lg:block hidden">Overview</h1>
         <div className="flex items-center">
           <input
             type="text"
             placeholder="search"
-            className="py-2 px-4 rounded-full dark:bg-zinc-950 bg-white border-2 border-zinc-300 dark:border-zinc-700 dark:hover:bg-zinc-700 hover:bg-zinc-300 focus-within:outline-none focus-within:bg-zinc-300 dark:focus-within:bg-zinc-700 w-96"
+            className="p-1 lg:py-2 lg:px-4 rounded-full dark:bg-zinc-950 bg-white border-2 border-zinc-300 dark:border-zinc-700 dark:hover:bg-zinc-700 hover:bg-zinc-300 focus-within:outline-none focus-within:bg-zinc-300 dark:focus-within:bg-zinc-700 lg:w-96 w-11 placeholder:text-transparent lg:placeholder:text-zinc-500"
           />
           <IconSearch
             width={24}
@@ -65,7 +65,11 @@ const Dashboard = () => {
             )}
           </div>
           <div className="border-2 rounded-md border-zinc-300 bg-white dark:border-zinc-700 dark:bg-zinc-950 p-2 w-12 h-12 flex items-center justify-center hover:bg-zinc-300 dark:hover:bg-zinc-700 cursor-pointer transition-all">
-            <IconNotification width={24} height={24}className="fill-zinc-800 dark:fill-white" />
+            <IconNotification
+              width={24}
+              height={24}
+              className="fill-zinc-800 dark:fill-white"
+            />
           </div>
           <div className="border-2 rounded-md border-zinc-700 bg-zinc-950 overflow-hidden w-12 h-12 flex items-center justify-center cursor-pointer transition-all">
             <img
@@ -77,7 +81,8 @@ const Dashboard = () => {
         </div>
       </header>
 
-      <main className="grid grid-cols-3 grid-rows-2 w-full h-full gap-6">
+      <main className="flex flex-col lg:grid lg:grid-cols-3 lg:grid-rows-2 w-full h-full gap-6">
+        <h1 className="font-bold text-2xl block lg:hidden">Overview</h1>
         <MainCard
           title="Profit"
           subtitle="Results of the period"

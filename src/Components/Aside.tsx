@@ -3,7 +3,7 @@ import IconLogout from "../../src/assets/icon-out.svg";
 
 const Aside = () => {
   return (
-    <aside className="p-6 flex flex-col justify-between h-[100vh] border-r-zinc-200 dark:border-r-zinc-800 border-r-2">
+    <aside className="p-6 flex-col justify-between h-[100vh] border-r-zinc-200 dark:border-r-zinc-800 border-r-2 hidden lg:flex">
       <nav>
         <div
           className="flex

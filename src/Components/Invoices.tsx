@@ -12,7 +12,7 @@ type InvoicesProps = {
 const Invoices = ({ title, icon, subtitle, bgColor }: InvoicesProps) => {
   return (
     <div className="card span-2">
-      <div className={`card ${bgColor}`}>
+      <div className={`${bgColor}`}>
         <div className="card-header">
           <div className="card-icon">
             {icon}
