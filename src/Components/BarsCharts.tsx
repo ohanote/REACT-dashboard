@@ -8,10 +8,11 @@ import {
   ResponsiveContainer,
 } from "recharts";
 import BARS_DATA from "../../constants/barsData.ts";
+import React from "react";
 
 type BarsChartsProps = {
   title: string;
-  icon: string;
+  icon: React.ReactNode;
   subtitle?: string;
   bgColor: string;
   textColor: string;
@@ -22,7 +23,7 @@ const BarsCharts = ({ title, icon, subtitle, bgColor, textColor }: BarsChartsPro
     <div className={`card ${bgColor}`} >
       <div className="card-header">
       <div className="card-icon">
-          <img src={icon} alt={title} width={48} />
+          {icon}
         </div>
         <div className="card-text">
           <h2 className="card-title">{title}</h2>

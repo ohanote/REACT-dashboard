@@ -1,5 +1,6 @@
-import { PieChart, Pie, Cell, ResponsiveContainer, Legend } from "recharts";
+import { PieChart, Pie, Cell, ResponsiveContainer, Legend, Tooltip } from "recharts";
 import BARS_DATA from "../../constants/barsData";
+import React from "react";
 
 const COLORS = [
   "#f87171",
@@ -13,7 +14,7 @@ const COLORS = [
 
 type CustomPieChartsProps = {
   title: string;
-  icon: string;
+  icon: React.ReactNode;
   subtitle?: string;
   bgColor: string;
   textColor: string;
@@ -30,7 +31,7 @@ const CustomPieCharts = ({
     <div className={`card ${bgColor}`}>
       <div className="card-header">
         <div className="card-icon">
-          <img src={icon} alt={title} width={48} />
+          {icon}
         </div>
         <div className="card-text">
           <h2 className="card-title">{title}</h2>
@@ -62,6 +63,7 @@ const CustomPieCharts = ({
               />
             ))}
           </Pie>
+          <Tooltip /> 
           <Legend />
         </PieChart>
       </ResponsiveContainer>

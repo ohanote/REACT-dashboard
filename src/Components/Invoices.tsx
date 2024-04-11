@@ -1,8 +1,9 @@
+import React from "react";
 import CLIENTS from "../../constants/clients";
 
 type InvoicesProps = {
   title: string;
-  icon: string;
+  icon: React.ReactNode;
   subtitle?: string;
   bgColor: string;
   textColor: string;
@@ -14,7 +15,7 @@ const Invoices = ({ title, icon, subtitle, bgColor }: InvoicesProps) => {
       <div className={`card ${bgColor}`}>
         <div className="card-header">
           <div className="card-icon">
-            <img src={icon} alt={title} width={48} />
+            {icon}
           </div>
           <div className="card-text">
             <h2 className="card-title">{title}</h2>
@@ -23,7 +24,7 @@ const Invoices = ({ title, icon, subtitle, bgColor }: InvoicesProps) => {
         </div>
       </div>
       <div className="grid grid-rows-5 gap-2">
-        <div className="grid grid-cols-7 gap-2 text-sm font-light text-zinc-300 items-center w-full">
+        <div className="grid grid-cols-7 gap-2 text-sm font-light text-zinc-800 dark:text-zinc-300 items-center w-full">
             <span className="span-2">Costumer Name</span>
             <span>Date</span>
             <span>Amount</span>
@@ -49,7 +50,7 @@ const Invoices = ({ title, icon, subtitle, bgColor }: InvoicesProps) => {
               <span>{e.Amount}</span>
               <span>{e.productId}</span>
               <span>{e.status}</span>
-              <span className="text-teal-300">{e.option}</span>
+              <span className="text-teal-600 dark:text-teal-300">{e.option}</span>
             </div>
           );
         })}
