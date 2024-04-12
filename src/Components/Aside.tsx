@@ -8,7 +8,7 @@ type AsideProps = {
 const Aside = ({ className }: AsideProps) => {
   return (
     <aside
-      className={`flex w-full transition-all duration-500 fixed lg:relative z-50 pt-16 lg:py-0 p-6 lg:flex flex-col bg-white dark:bg-zinc-950 justify-between h-[100vh] border-r-zinc-200 dark:border-r-zinc-800 border-r-2 ${className}`}
+      className={`flex w-full transition-all duration-500 fixed lg:relative z-50 pt-16 lg:py-6 p-6 lg:flex flex-col bg-white dark:bg-zinc-950 justify-between h-[100vh] border-r-zinc-200 dark:border-r-zinc-800 border-r-2 lg:translate-x-0 lg:opacity-100 ${className}`}
       id="menu"
     >
       <nav>

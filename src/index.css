@@ -47,8 +47,4 @@
   .span-2 {
     @apply col-span-2;
   }
-
-  #menu {
-    animation: slideFromLeft 0.5s forwards;
-  }
 }
