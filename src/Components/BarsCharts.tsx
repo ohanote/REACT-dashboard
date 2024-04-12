@@ -31,7 +31,7 @@ const BarsCharts = ({ title, icon, subtitle, bgColor, textColor }: BarsChartsPro
         </div>
       </div>
 
-      <ResponsiveContainer width="100%" height="100%" className="text-teal-300 transition-all cursor-pointer min-h-24">
+      <ResponsiveContainer width="100%" height="100%" className="responsiveContainer">
         <BarChart width={500} height={300} data={BARS_DATA} barSize={10} className="cursor-pointer">
           <XAxis
             dataKey="name"

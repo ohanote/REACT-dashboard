@@ -39,7 +39,7 @@ const LinesCharts = ({
       <ResponsiveContainer
         width="100%"
         height="100%"
-        className="text-teal-300 transition-all cursor-pointer"
+        className="responsiveContainer"
       >
         <LineChart
           width={500}
